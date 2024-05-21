@@ -32,10 +32,22 @@ public class Locators extends Base {
 	}
 	public void linkText()
 	{
+		WebElement simpleformdemo=driver.findElement(By.linkText("Simple Form Demo"));
+		WebElement checkboxdemo=driver.findElement(By.linkText("Checkbox Demo"));
+		WebElement radiobuttonsdemo=driver.findElement(By.linkText("Radio Buttons Demo"));
+		WebElement navbarhome=driver.findElement(By.linkText("Home"));
+		WebElement navbarinputform=driver.findElement(By.linkText("Input Form"));
 		
 	}
 	public void partialLinkText()
 	{
+		WebElement formsubmit=driver.findElement(By.partialLinkText("Submit"));
+		WebElement simpleform=driver.findElement(By.partialLinkText("Simple Form"));
+		WebElement checkbox=driver.findElement(By.partialLinkText("Checkbox"));
+		WebElement radiobutton=driver.findElement(By.partialLinkText("Radio buttons"));
+		WebElement navigationlinkalert=driver.findElement(By.partialLinkText("Alert"));
+		WebElement navigationlinklistbox=driver.findElement(By.partialLinkText("list"));
+		
 		
 	}
 
