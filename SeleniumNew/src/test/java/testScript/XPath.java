@@ -48,7 +48,7 @@ public void text()
 }
 public void and()
 {
-	//driver.findElement(By.xpath("//tag[@attribute='value' and @attribute='value']"));
+	// driver.findElement(By.xpath("//tag[@attribute='value' and @attribute='value']"));
 	
 	driver.findElement(By.xpath("//button[@type='button'and@id='button-all']"));
 	driver.findElement(By.xpath("//button[@type='button'and@id='button-first']"));
