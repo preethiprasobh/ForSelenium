@@ -2,7 +2,7 @@ package testScript;
 
 import org.openqa.selenium.By;
 
-public class CSSelector extends Base {    //combination of two attributes//high speed
+public class CSSelector extends Base {    //combination of two attributes//high speed hh
 	public void tagAndID()
 	{
 		driver.findElement(By.cssSelector("input#button-two"));
