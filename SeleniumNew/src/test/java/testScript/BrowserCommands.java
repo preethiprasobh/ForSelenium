@@ -5,7 +5,7 @@ public class BrowserCommands extends Base {
 	{
 		String title=driver.getTitle();
 		String url=driver.getCurrentUrl();
-		String pagesource=driver.getPageSource();
+		String pagesource=driver.getPageSource();//html source code of the current webpage
 		//System.out.println(pagesource);
 		
 	}

@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 public class CSSelector extends Base {    //combination of two attributes//high speed hh
 	public void tagAndID()
 	{
+		//css=tag#id 
 		driver.findElement(By.cssSelector("input#button-two"));
 		driver.findElement(By.cssSelector("button#button-two"));
 		driver.findElement(By.cssSelector("div#collapsibleNavbar"));
@@ -15,6 +16,7 @@ public class CSSelector extends Base {    //combination of two attributes//high 
 	}
 public void tagAndClass()//if space is present in class name, cannot take
 {
+	
 	driver.findElement(By.cssSelector("textarea.form-control"));
 	driver.findElement(By.cssSelector("input.form-control"));
 	driver.findElement(By.cssSelector("div.my-2"));

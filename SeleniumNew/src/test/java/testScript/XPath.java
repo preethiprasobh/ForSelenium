@@ -14,7 +14,9 @@ public void basicXpath()
 }
 public void contains()
 {
-	//driver.findElement(By.xpath("//div[contains(@id,'-one')]"));
+	//driver.findElement(By.xpath("//div[contains(@id,'-one')]"));//this line of code will return the first <div> element that has an id attribute 
+	//containing the substring "-one".
+	//If there are multiple matching elements, it will return the first one encountered in the HTML document
 	driver.findElement(By.xpath("//div[contains(@id,'-one')]"));
 	driver.findElement(By.xpath("//input[contains(@id,'Custom02')"));
 	driver.findElement(By.xpath("//button[contains(@type,'sub')]')"));
@@ -24,9 +26,16 @@ public void contains()
 	
 }
 public void startsWith()
+//For example, an element might have an ID attribute like "element-123", where "123" is dynamically generated. 
+//You can use starts-with() to locate elements based on the static part of the ID.
+
+//Prefix-based Selection: If elements on a page have similar attributes with varying prefixes, 
+//you can use starts-with() to select them based on the common prefix.
+/// Example: Find all anchor elements with IDs starting with "nav-"
+//example:- driver.findElements(By.xpath("//a[starts-with(@id,'nav-')]"));
 {
-	//driver.findElement(By.xpath("//button[starts-with(text(),'Show Message')]"));
-	driver.findElement(By.xpath("//div[contains(@id,'-one')]"));
+	//driver.findElement(By.xpath("//button[starts-with(@attribute,'value')]"));
+	
 	driver.findElement(By.xpath("//a[starts-with(@id,'ot')]"));
 	driver.findElement(By.xpath("//button[starts-with(@id,'button-t')]"));
 	driver.findElement(By.xpath("//div[starts-with(@id,'message-t')]"));
