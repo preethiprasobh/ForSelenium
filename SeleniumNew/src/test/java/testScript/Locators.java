@@ -1,6 +1,7 @@
 package testScript;
 
 import org.openqa.selenium.By;//Import the 'By' class for using the locators
+
 import org.openqa.selenium.WebElement;//Import the interface WebElement for interacting with the webelements
 
 public class Locators extends Base {
