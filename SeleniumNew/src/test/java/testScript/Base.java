@@ -1,5 +1,7 @@
 package testScript;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -12,6 +14,7 @@ public class Base {
 		driver=new ChromeDriver();//loading the chrome driver (or) browser initialization(ctrl+space)//initializes the WebDriver instance by creating a new ChromeDriver object
 		driver.get("https://selenium.qabible.in/");//launch the URL//wait till the whole page loads
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15) );
 		
 				}
 public void driverQuitandClose()//Quit-closing both parent and associated windows, close-closing only parent window
